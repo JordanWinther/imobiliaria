@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet"   href="/css/estiloSpringBoot.css"  > 
+	<!-- Custom styles for this template -->
+  	<link href="/css/agency.css" rel="stylesheet">
+	
+    <title>Hello, world!</title>
+  </head>
+  
+  
+  <body  id="page-top" >
+  
+  
+  
+   <!-- Navigation -->
+   
+   
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+    
+    	<div class=""><img class="logo img-responsive" alt="logoSpring" src="/img/background/logoiur.png"></div>
+      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"></a> -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+          </li>
+          
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header 
+  
+  <div class="container-fluid imagemFundo" >
+	  <div class="padding">
+			<div class=""><img class="centralizaimg" alt="logoSpring" src="/img/background/logoSpring.png"></div>
+		</div>
+	</div>
+	
+  -->
+  
+  
+  
+	<!-- Header -->
+  <header class="masthead">
+    <div class="container">
+	    <div id="menu" >
+	   	
+	   </div>
+      <div class="intro-text">
+        <div class="intro-lead-in">Seja bem vindo a</div>
+        <div class="intro-heading text-uppercase"> Imóveis urbanos e rurais</div>
+        <a class=" text-introducao " href="#services">Seu imóvel está aqui!</a>
+      </div>
+      <form class="form-inline   padlogin">
+		      <input  name="login" class="form-control mr-sm-1 transp p-2" type="email" placeholder="Login" aria-label="Login">
+		      <input  name="senha" class="form-control mr-sm-1 transp p-2" type="email" placeholder="Senha" aria-label="Senha">
+		      <button class="btn btn-outline my-1 my-sm-0 btn-iur" type="submit">Logar</button>
+    	</form>
+      
+    </div>
+  </header>
+	<!-- Header -->
+	
+	
+	<!-- Pesquisa -->
+	
+	<section class="page-section"  id="pesquisa">
+		<div  class="container" >
+			<div class="row" >
+				
+				<div class="col-md-6 text-center" >
+					<h3 class="" >Pesquise o tipo de ímovel que deseja</h3>
+					<a class=" text-introducao  " href="#services">Seu imóvel está aqui!</a>
+				</div>
+				
+				<div class="col-md-6" >
+						<form  class=" form-inline  " action="/pesquisar" method="get">
+							<div class="form-group">
+									<input type="text" name="search"  class="form-control  "  placeholder="Pesquisar" >  
+							</div>
+							<div  class="form-group" >
+									 <button class=" form-control btn   btn-iur" type="submit">Pesquisar</button>
+							</div>
+						</form>
+						<!--  <a class="btn btn-success btn-iur" href="/listarImoveis"  >Listar Imóveis</a>-->
+					</div>
+			</div>
+		</div>
+		
+</section>
+	
+	<!-- Fecha Pesquisa -->
+	
+	
+	<section class="produtosdiv" id="produtos ">
+		<div  class="container ">
+			<div class="row">
+				<div class="col-lg-4">
+					
+					                    <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+
+					<h4>Condomínio Parque Ararás  </h4>
+									
+						<div class="">
+								
+									<h5 class="inline "> Tipo :  </h5>
+									<h5 class="inline"> Casa   </h5>
+									
+									<h5 class="inline">-   Quartos :  </5>
+									<h5 class="inline"> 3   </h5>
+									
+									<h5 class="inline"> -   Metros :  </h5>
+									<h5 class="inline"> 90   </h5>
+						</div>
+				
+					
+				
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Lista e cadastro -->
+	
+	<section class="page-section produtosdiv"  >
+		<div class="container" >
+			<div class="row">
+				<div class="col-xs-12" >
+				
+					   			<div class="container page-top">
+							        	<div class="row">
+							
+							            <div  th:each="imovel : ${imoveis}" class="col-lg-6 col-md-6 col-xs-6 thumb ">						               
+								                <h4 th:text = "${imovel.id}" ></h4>
+								                 <h4 th:text = "${imovel.rua}" ></h4>								               
+								                <h4 th:text = "${imovel.numero}" ></h4>
+								                <h4 th:text = "${imovel.tipo}" ></h4>
+								                <h4 th:text = "${imovel.descricao}" ></h4>
+								                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4" viewBox="0 0 16 16">
+												  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
+														<h4 th:text = "${imovel.data}" ></h4> 
+												</svg>
+								               
+								                <a class="btn btn-iur" th:href="@{/editarImovel/{idImovel}(idImovel=${imovel.id})}" >Editar</a>
+								                <a  class="btn btn-danger"  th:href="@{/excluirImovel/{idImovel}(idImovel=${imovel.id})}">Excluir</a>
+							            </div>
+							            
+							       </div>
+				    	 	</div>
+		
+					</div>
+				</div>
+			</div>
+	</section>
+	
+	
+	<section class="page-section" id="services">
+	<div class="container" >
+		<div class="row">
+			<div class="col-xs-12" >
+			
+	   <div class="paddingtext">
+			  	<a class="btn btn-iur" href="cadastroPessoa" role="button">Cadastrar Pessoa</a>
+			  	<a class="btn btn-iur" href="/cadastraImovel" role="button">Cadastrar Imóvel</a>
+			  	<a class="btn btn-iur" href="listarPessoas" role="button">Listar pessoas</a>
+		</div>
+						
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	<section class="page-section" id="cadastro2" >
+		
+		<div class="container">
+		<div class="row">
+			
+			
+			<form class="padding" method="post" action="/salvarImovel2"  th:object="${ImovelObjeto}"  >
+					<div class="form-group" >
+						<input type="text"  class="form-control"  name="id"  hidden="" placeholder=""  th:field="*{id}" >
+					</div>
+					
+					<div class="form-group" >
+						<input type="text"  class="form-control"  name="rua" placeholder="Rua"  th:field="*{rua}" >
+					</div>
+			
+					  <div class="form-group">
+					   		 <input type="text" class="form-control"  name="numero" aria-describedby="Text" placeholder="Número"  th:field="*{numero}" >
+					  </div>
+					  
+					   
+					  
+					  
+					  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+							  <label class="btn btn-secondary active">
+							    	<input type="radio" name="tipo" id="option1" autocomplete="off"  value="Casa"  th:field="*{tipo}" checked> Casa
+							  </label>
+							  <label class="btn btn-secondary">
+							    	<input type="radio" name="tipo" id="option2" autocomplete="off"  value="Apartamento"  th:field="*{tipo}"  > Apartamento
+							  </label>
+							  <label class="btn btn-secondary">
+							    	<input type="radio" name="tipo" id="option2" autocomplete="off"  value="Duplex"   th:field="*{tipo}" > Duplex
+							  </label>
+							  <label class="btn btn-secondary">
+							    	<input type="radio" name="tipo" id="option2" autocomplete="off"  value="Cobertura"  th:field="*{tipo}"  > Cobertura
+							  </label>
+					</div>
+			  
+				  <div class="form-group paddingtTF">
+				  	<input  type="text"  class="form-control"  name="descricao"  placeholder="Descrição" th:field="*{descricao}">
+				  </div>
+				  
+					 <div class="form-group">
+					  		<input type="number"  class="form-control" name="valor" placeholder="Valor">
+					  </div>
+				  
+					  <div class="form-group">
+					  		<input type="date" class="form-control"  name="data">
+					  </div>
+				  
+				  <div class="input-group mb-3  paddingtTF">
+				  
+				    	
+				  
+						  <div class="custom-file">
+							    <input type="file" class="custom-file-input" id="imagem"  name="imagem">
+							    <label class="custom-file-label" for="imagem">Carregar Imagens </label>
+						 </div>
+					</div>
+				  
+				  <button type="submit" class="btn   btn-iur"  value="salvarImovel">Salvar</button>
+				  <a class="btn btn-success btn-iur" href="/listarImoveis"  >Listar Imóveis</a>
+		
+			</form>
+			
+			
+		</div>
+	</div>
+		
+		</section>
+		<!-- FINAL DO CADASTRO -->
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	<div class="container page-top">
+
+        <div class="row">
+
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                   
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
+                </a>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+            
+           
+           
+       </div>
+
+     </div>
+     
+     
+     -->
+     
+     
+     
+
+
+
+
+	 
+	  
+	  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script  src="/js/img.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

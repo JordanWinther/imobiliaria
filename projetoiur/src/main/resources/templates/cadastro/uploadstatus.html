@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet"   href="/css/estiloSpringBoot.css"  > 
+	<!-- Custom styles for this template -->
+  	<link href="/css/agency.css" rel="stylesheet">
+	
+    <title>Cadastro Pessoa </title>
+  </head>
+  <body  id="page-top" >
+  
+  
+  
+   <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav">
+		    <div class="container">
+				    	<div class=""><img class="logo img-responsive"   id="brand-image" alt="logoSpring" src="/img/background/logoiur.png"></div>
+				       <a class="navbar-brand js-scroll-trigger" href="#page-top"></a> 
+				     
+				      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						        Menu
+						        <i class="fas fa-bars"></i>
+				      </button>
+				      <div class="collapse navbar-collapse" id="navbarResponsive">
+					        <ul class="navbar-nav text-uppercase ml-auto">
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+					          </li>
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#portfolio">Produtos</a>
+					          </li>
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#about">Mapa</a>
+					          </li>
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
+					          </li>
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+					          </li>
+					        </ul>
+				      </div>
+				     
+				      
+		    </div>
+  </nav>
+ 
+  
+  
+	<!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Seja bem vindo a</div>
+        <div class="intro-heading text-uppercase"> Imóveis urbanos e rurais</div>
+        <a class=" text-introducao " href="#services">Seu imóvel está aqui!</a>
+      </div>
+      <form class="form-inline   padlogin" action="/salvarPessoa">
+		      <input  name="login" class="form-control mr-sm-1 transp p-2" type="email" placeholder="Login" aria-label="Login">
+		      <input  name="senha" class="form-control mr-sm-1 transp p-2" type="email" placeholder="Senha" aria-label="Senha">
+		      <button class="btn btn-outline my-1 my-sm-0 btn-iur" type="submit">Logar</button>
+    	</form>
+      
+    </div>
+  </header>
+	<!-- Fim do Header -->
+	
+	
+	<!-- Lista e cadastro -->
+	
+		<section class="page-section" id="cadastro" >
+		
+		<div class="container">
+		<div class="row">
+					<div class="col-md-12">
+						<h1>Upload Status</h1>
+						
+						<div th:if="${message}">
+						    <h1 th:text="${message}"/></h2>
+						</div>
+					
+						<div th:if="${message}" >
+							<h2 th:text="${message}"></h3>
+						</div>
+					</div>
+			
+						<div >
+							<h3 th:text="${message3}" ></h3>
+						</div>
+		</div>
+	</div>
+		
+		</section>	
+		<!-- FINAL DO CADASTRO -->
+	
+	
+	
+	<section class="page-section" id="services">
+	<div class="container" >
+		<div class="row">
+			<div class="col-xs-12" >
+			
+	   
+						
+				</div>
+			</div>
+		</div>
+	</section>
+	
+    <!--  
+				  						<iframe src="https://videobin.co/embed-8cpfgwvajakx.html" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen></iframe>
+			
+	  -->
+	  
+	  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 
+    <script src="/css/js/img.js"  type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

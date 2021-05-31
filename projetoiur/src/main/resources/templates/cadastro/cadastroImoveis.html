@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet"   href="/css/estilospringboot.css"  > 
+	<!-- Custom styles for this template -->
+  	<link href="/css/agency.css" rel="stylesheet">
+	
+    <title>Cadastro Pessoa </title>
+  </head>
+  <body  id="page-top" >
+  
+   <div id="menu" ></div>
+   
+   <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav">
+		    <div class="container">
+				    	<div class=""><img class="logo img-responsive"   id="brand-image" alt="logoSpring" src="/img/background/logoiur.png"></div>
+				       <a class="navbar-brand js-scroll-trigger" href="#page-top"></a> 
+				     
+				      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						        Menu
+						        <i class="fas fa-bars"></i>
+				      </button>
+				      <div class="collapse navbar-collapse" id="navbarResponsive">
+					        <ul class="navbar-nav text-uppercase ml-auto">
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#cadastro">Cadastro</a>
+					          </li>
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#produtos">Produtos</a>
+					          </li>
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#about">Mapa</a>
+					          </li>
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
+					          </li>
+					          <li class="nav-item">
+					            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+					          </li>
+					        </ul>
+				      </div>
+				     
+				      
+		    </div>
+  </nav>
+ 
+  
+  
+	<!-- Header -->
+  <header class="masthead">
+    <div class="container">
+   
+      <div class="intro-text">
+        <div class="intro-lead-in">Seja bem vindo a</div>
+        <div class="intro-heading text-uppercase"> Imóveis urbanos e rurais</div>
+        <a class=" text-introducao " href="#services">Seu imóvel está aqui!</a>
+      </div>
+      <form class="form-inline   padlogin" action="/salvarPessoa">
+		      <input  name="login" class="form-control mr-sm-1 transp p-2" type="email" placeholder="Login" aria-label="Login">
+		      <input  name="senha" class="form-control mr-sm-1 transp p-2" type="email" placeholder="Senha" aria-label="Senha">
+		      <button class="btn btn-outline my-1 my-sm-0 btn-iur" type="submit">Logar</button>
+    	</form>
+      
+    </div>
+  </header>
+	<!-- Header -->
+	
+	
+	<!-- Lista e cadastro -->
+		
+		<section class="page-section" id="cadastro" >
+		
+		<div class="container">
+		<div class="row">
+			
+			
+			<form method="post" action="/salvarImovel"  th:object="${ImovelObjeto}"  >
+					<div class="form-group" >
+						<input type="text"  class="form-control"  name="id"  hidden="" placeholder=""  th:field="*{id}" >
+					</div>
+					
+					<div class="form-group" >
+						<input type="text"  class="form-control"  name="rua" placeholder="Rua"  th:field="*{rua}" >
+					</div>
+			
+					  <div class="form-group">
+					   		 <input type="text" class="form-control"  name="numero" aria-describedby="Text" placeholder="Número"  th:field="*{numero}" >
+					  </div>
+					  
+					   
+					  
+					  
+					  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+							  <label class="btn btn-secondary active">
+							    	<input type="radio" name="tipo" id="option1" autocomplete="off"  value="Casa"  th:field="*{tipo}" checked> Casa
+							  </label>
+							  <label class="btn btn-secondary">
+							    	<input type="radio" name="tipo" id="option2" autocomplete="off"  value="Apartamento"  th:field="*{tipo}"  > Apartamento
+							  </label>
+							  <label class="btn btn-secondary">
+							    	<input type="radio" name="tipo" id="option2" autocomplete="off"  value="Duplex"   th:field="*{tipo}" > Duplex
+							  </label>
+							  <label class="btn btn-secondary">
+							    	<input type="radio" name="tipo" id="option2" autocomplete="off"  value="Cobertura"  th:field="*{tipo}"  > Cobertura
+							  </label>
+					</div>
+			  
+				  <div class="form-group paddingtTF">
+				  	<input  type="text"  class="form-control"  name="descricao"  placeholder="Descrição" th:field="*{descricao}">
+				  </div>
+				  
+					 
+				  
+				  <div class="input-group mb-3  paddingtTF">
+				  
+				    	
+				  
+						  <div class="custom-file">
+							    <input type="file" class="custom-file-input" id="imagem"  name="imagem">
+							    <label class="custom-file-label" for="imagem">Carregar Imagens </label>
+						 </div>
+					</div>
+				  
+				  <button type="submit" class="btn   btn-iur"  value="salvarImovel">Salvar</button>
+				  <a class="btn btn-success btn-iur" href="/listarImoveis"  >Listar Imóveis</a>
+		
+			</form>
+			
+			
+		</div>
+	</div>
+		
+		</section>
+		<!-- FINAL DO CADASTRO -->
+	
+	
+	<!-- Pesquisa -->
+	
+	<section class="page-section"  id="pesquisa">
+		<div  class="container" >
+			<div class="row" >
+				
+				<div class="col-md-6 text-center" >
+					<h3 class="" >Pesquise o tipo de ímovel que deseja</h3>
+					<a class=" text-introducao  " href="#services">Seu imóvel está aqui!</a>
+				</div>
+				
+				<div class="col-md-6" >
+						<form  class=" form-inline  " action="/pesquisar" method="post">
+							<div class="form-group">
+									<input type="text" name="search"  class="form-control  "  placeholder="Pesquisar" >  
+							</div>
+							<div  class="form-group" >
+									 <button class=" form-control btn   btn-iur" type="submit">Pesquisar</button>
+							</div>
+						</form>
+						<!--  <a class="btn btn-success btn-iur" href="/listarImoveis"  >Listar Imóveis</a>-->
+					</div>
+			</div>
+		</div>
+		
+		
+		
+	</section>
+	
+	<!-- Fim da Pesquisa -->
+	
+					  	
+			  	<!-- AQUI É A TABELA -->
+			<section class="page-section imovel" id="produtos">
+				<div class="container " >
+					<div class="row" >
+								<div class="col-md-12">
+											<table class="table">
+										
+													<thead class="btn-iur">
+													    <tr>
+													     	  <th scope="col">Id</th>
+														      <th scope="col">rua</th>
+														      <th scope="col">número</th>
+														      <th scope="col">tipo</th>
+														      <th scope="col">descrição</th>
+														      <th scope="col">valor</th>
+														      <th scope="col">data</th>
+														      <th scope="col" >Imagem</th>
+														      <th scope="col" ></th>
+														      <th scope="col" ></th>
+													    </tr>
+											  	</thead>
+											  	
+												  <tbody>
+												    <tr th:each = "imovel : ${imoveis}" >
+												    		<td  th:text = "${imovel.id}"  ></td>
+															<td  th:text = "${imovel.rua}" ></td>
+															<td  th:text = "${imovel.numero}" ></td>
+															<td  th:text = "${imovel.tipo}" ></td>
+															<td  th:text = "${imovel.descricao}" ></td>
+															<td  th:text = "${imovel.valor}" ></td>
+															<td  th:text = "${imovel.data}" ></td>
+															<td> <img height="70px" width="110px"   th:src="${imovel.imagem}"> </td>
+															<td  ><a class="btn btn-iur" th:href="@{/editarImovel/{idImovel}(idImovel=${imovel.id})}" >Editar</a> </td>
+															<td><a  class="btn btn-danger"  th:href="@{/excluirImovel/{idImovel}(idImovel=${imovel.id})}">Excluir</a></td>
+												    </tr>
+												</tbody>
+										</table>
+										
+							</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		
+	
+	
+	<!-- SERVIÇOS -->
+	
+	<section class="page-section" id="services">
+	<div class="container" >
+		<div class="row">
+			
+					<div class="paddingUpload" >
+			   				<!-- Formulário para salvar imagem no disco -->					
+							<h3>Spring Boot file upload </h3>
+				
+							<form method="POST" action="/upload" enctype="multipart/form-data">
+							    <input type="file"  name="file" /><br/><br/>
+							    
+							    <input type="submit" class="btn btn-iur centraliza" value="Submit" />
+							</form>
+								
+						</div>
+						
+						<div class="paddingUpload" >
+						
+								<h3>Casdatro de arquivos 2 </h3>
+							
+							<form method="POST" action="/upload2" enctype="multipart/form-data">
+							    <input type="file"  name="file" /><br/><br/>
+							    
+							    <input type="submit" class="btn btn-iur centraliza" value="Submit" />
+							</form>
+								
+						</div>
+				
+			</div>
+		</div>
+	</section>
+	
+
+    <!--  
+				  						<iframe src="https://videobin.co/embed-8cpfgwvajakx.html" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen></iframe>
+			
+	  -->
+	  
+	  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 	<script  src="/js/img.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
